@@ -14,7 +14,7 @@ const Cart: React.FC<CartItemProps> = ({
   removeFromCart,
 }) => {
   const calculateTotal = (items: CartItemType[]) => {
-    items.reduce((ack: number, item) => ack + item.amount * item.price, 0);
+  return  items.reduce((ack: number, item) => ack + item.amount * item.price, 0);
   };
   return (
     <>
@@ -29,7 +29,7 @@ const Cart: React.FC<CartItemProps> = ({
             removeFromCart={removeFromCart}
           />
         ))}
-        {/* <h2>Total : ${calculateTotal(cartItems).toFixed(2)}</h2> */}
+        <h2>Total : ${calculateTotal(cartItems).toFixed(2)}</h2>
       </CartWrapper>
     </>
   );
