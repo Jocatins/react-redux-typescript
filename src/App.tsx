@@ -1,9 +1,9 @@
-import AllItems from "./AllItems/AllItems";
+import BankLogic from "./state/bankApp/Bank-Logic";
 
 const App = () => {
   return (
     <div>
-      <AllItems />
+      <BankLogic />
     </div>
   );
 };

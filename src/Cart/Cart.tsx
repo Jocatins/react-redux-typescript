@@ -14,13 +14,16 @@ const Cart: React.FC<CartItemProps> = ({
   removeFromCart,
 }) => {
   const calculateTotal = (items: CartItemType[]) => {
-  return  items.reduce((ack: number, item) => ack + item.amount * item.price, 0);
+    return items.reduce(
+      (ack: number, item) => ack + item.amount * item.price,
+      0
+    );
   };
   return (
     <>
       <CartWrapper>
         <h2>Your Shopping Cart</h2>
-        {cartItems.length === 0 ? <p>No items left</p> : null}
+        {cartItems.length === 0 ? <p>There are no items in your cart</p> : null}
         {cartItems.map((item) => (
           <CartItem
             key={item.id}

@@ -14,7 +14,6 @@ import { CartItemType, getProducts } from "../Api";
 // components
 import Item from "../Item/Item";
 import Cart from "../Cart/Cart";
-import CartItem from "../CartItem/CartItem";
 
 const AllItems = () => {
   const [cartOpen, setCartOpen] = useState(false);
@@ -71,8 +70,10 @@ const AllItems = () => {
     );
   return (
     <>
-      <h2>Hello</h2>
       <AllItemsWrapper>
+        <div style={{ alignItems: "center" }}>
+          <h2>Sphinx-Shop</h2>
+        </div>
         <Drawer
           anchor="right"
           open={cartOpen}

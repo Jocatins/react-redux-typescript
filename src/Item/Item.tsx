@@ -13,7 +13,7 @@ const Item: React.FC<ItemProps> = ({ item, handleAddItem }) => (
     <div>
       <h3>{item.title}</h3>
       <h3>{item.description}</h3>
-      <h3>{item.price}</h3>
+      <h3>${item.price}</h3>
     </div>
     <Button onClick={() => handleAddItem(item)}>Add to cart</Button>
   </ItemWrapper>
