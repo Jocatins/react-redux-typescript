@@ -12,3 +12,4 @@ const fakeProductsApi = "https://fakestoreapi.com/products";
 
 export const getProducts = async (): Promise<CartItemType[]> =>
   await (await fetch(fakeProductsApi)).json();
+ 

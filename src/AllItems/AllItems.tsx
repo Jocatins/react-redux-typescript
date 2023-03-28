@@ -24,8 +24,8 @@ const AllItems = () => {
   );
   console.log(data);
 
-  const getTotalItems = (items: CartItemType[]) =>
-    items.reduce((ack: number, item) => ack + item.amount, 0);
+  const getTotalItems = (items: CartItemType[]) => items.reduce((ack: number, item) => ack + item.amount, 0);
+  
   const handleAddItem = (clickedItem: CartItemType) => {
     // call a setter function for the state
     setCartItems((prev) => {
