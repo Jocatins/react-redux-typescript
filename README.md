@@ -21,6 +21,8 @@ return new state;}
 
 7] Create an index.js file that will
 
--   export the all the actionCreators
+-   export all the actionCreators
 -   export the store
 -   export the reducers
+
+8] Use logic/ functions in the applications with the aid of bindActionCreators from 'redux'
